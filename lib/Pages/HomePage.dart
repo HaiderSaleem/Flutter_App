@@ -76,6 +76,22 @@ class HomePageState extends State<HomePage> {
         ),
       ),
       body: _getDrawerItemWidget(_selectedDrawerIndex),
+      bottomNavigationBar: CurvedNavigationBar(
+        height: 50,
+        color: Colors.orange,
+        items: <Widget>[
+          Icon(Icons.home, size: 20,color: Colors.black,),
+          Icon(Icons.add, size: 20,color: Colors.black,),
+          Icon(Icons.wifi, size: 20,color: Colors.black,),
+          Icon(Icons.apps, size: 20,color: Colors.black,)
+        ],
+        animationDuration: Duration(
+            milliseconds: 200
+        ),
+        backgroundColor: Colors.white,
+        buttonBackgroundColor: Colors.white,
+        animationCurve: Curves.bounceInOut,
+      ),
     );
   }
 }
