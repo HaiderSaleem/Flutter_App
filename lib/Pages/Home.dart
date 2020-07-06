@@ -38,6 +38,7 @@ class HomeState extends State<Home> {
       // If the server did return a 200 OK response,
       // then parse the JSON.
       futureAlbum = (json.decode(response.body));
+      updateValue();
       return "Success";
     } else {
       // If the server did not return a 200 OK response,
