@@ -116,6 +116,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.1.8"
+  onboardme:
+    dependency: "direct main"
+    description:
+      name: onboardme
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.2.0"
   path:
     dependency: transitive
     description:

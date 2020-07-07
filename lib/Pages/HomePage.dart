@@ -10,6 +10,11 @@ class DrawerItem {
   DrawerItem(this.title, this.icon);
 }
 
+void main() {
+  runApp(MaterialApp(
+    home: HomePage(),
+  ));
+}
 class HomePage extends StatefulWidget {
   final drawerItems = [
     new DrawerItem("Fragment 1", Icons.rss_feed),
